@@ -15,27 +15,27 @@ class SimpleState4ViewModel : ViewModel() {
 
     fun increment() {
         val oldState = stateLiveData.value
-        stateLiveData.value = oldState?.copy(
-            counterValue = oldState.counterValue + 1
-        )
+//        stateLiveData.value = oldState?.copy(
+//            counterValue = oldState.counterValue + 1
+//        )
     }
 
     fun setRandomColor() {
         val oldState = stateLiveData.value
-        stateLiveData.value = oldState?.copy(
-            counterTextColor = Color.rgb(
-                kotlin.random.Random.nextInt(256),
-                kotlin.random.Random.nextInt(256),
-                kotlin.random.Random.nextInt(256)
-            )
-        )
+//        stateLiveData.value = oldState?.copy(
+//            counterTextColor = Color.rgb(
+//                kotlin.random.Random.nextInt(256),
+//                kotlin.random.Random.nextInt(256),
+//                kotlin.random.Random.nextInt(256)
+//            )
+//        )
     }
 
     fun switchVisibility() {
         val oldState = stateLiveData.value
-        stateLiveData.value = oldState?.copy(
-            counterIsVisible = !oldState.counterIsVisible
-        )
+//        stateLiveData.value = oldState?.copy(
+//            counterIsVisible = !oldState.counterIsVisible
+//        )
     }
 
     class State(
